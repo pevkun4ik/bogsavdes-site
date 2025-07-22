@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | BogSavDes</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header" id="myHeader">
+        <div class="wrapper">
+            
+            <div class="header__wrapper">
+                <div class="header__logo">
+                <a href="./index.html" class="header__logo link">
+                    <img src="./img/svg/logo.svg" alt="44PEV" class="header__logo-pic">
+                </a>
+            </div>
+            <div class="header__nav">
+                <ul class="header_list">
+                    <li class="header__item">
+                        <a href="./index.html" class="header__link">Главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./window-portf.html" class="header__link">Портфолио</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./window-contacts.html" class="header__link__active">Галерея</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./window-entry.php" class="header__link">Сделать заказ</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+</header>
+<main class="contacts">
+    <div class="wrapper">
+        <h1 class="section-title">Галерея</h1>
+        <div class="slider-wrapper">
+            <button class="slider-btn left" aria-label="Назад">&#10094;</button>
+            <div class="slider">
+                <div class="slider-track">
+                    <img src="./img/PH1.jpg" class="slider-image">
+                    <img src="./img/PH2.png" class="slider-image">
+                    <img src="./img/PH3.jpg" class="slider-image">
+                    <img src="./img/PH4.jpg" class="slider-image">
+                    <img src="./img/PH5.jpg" class="slider-image">
+                </div>
+            </div>
+            <button class="slider-btn right" aria-label="Вперёд">&#10095;</button>
+        </div>
+        <p class="slider-description">
+          Я — дизайнер с вниманием к деталям и страстью к визуальному стилю. Работаю в направлениях графики, брендинга и интерфейсов, создавая выразительные и функциональные решения для каждого проекта.<br><br>
+          Мой творческий путь начался с увлечения иллюстрацией и типографикой, со временем перерос в осознанную любовь к дизайну. За годы практики я научился не только видеть эстетику, но и понимать потребности клиента, создавая дизайн, который работает. Я стремлюсь к тому, чтобы каждый проект был не просто красивым, но и функциональным, понятным, живым.
+        </p>
+        <div class="slider-wrapper">
+          <button class="slider-btn left" aria-label="Назад">&#10094;</button>
+          <div class="slider">
+            <div class="slider-track">
+              <img src="./img/q1.jpeg" class="slider-image">
+              <img src="./img/q2.jpg" class="slider-image">
+              <img src="./img/q3.jpg" class="slider-image">
+              <img src="./img/q4.jpg" class="slider-image">
+              <img src="./img/q5.jpg" class="slider-image">
+            </div>
+          </div>
+          <button class="slider-btn right" aria-label="Вперёд">&#10095;</button>
+        </div>
+        <p class="slider-description">
+          Буду рад видеть вас среди моих клиентов. Если вы хотите воплотить визуальные идеи в жизнь — я всегда на связи. Пишите, заказывайте, мечтайте — и мы сделаем это вместе!
+        </p>
+    </div>
+</main>
+</body>
+<script>
+  const slider = document.querySelector('.slider');
+  document.querySelector('.slider-btn.left').addEventListener('click', () => {
+    slider.scrollBy({ left: -700, behavior: 'smooth' });
+  });
+  document.querySelector('.slider-btn.right').addEventListener('click', () => {
+    slider.scrollBy({ left: 700, behavior: 'smooth' });
+  });
+</script>
+
+<footer class="footer">
+    <section class="foot__int">
+        <div class="wrapper">
+        <!-- Заголовки в одной строке -->
+        <div class="wrapper__foot" style="display: flex; gap: 55px;">
+            <h3 class="foot__tit">Контакты</h3>
+            <h3 class="foot__tit">Соцсети</h3>
+            <h3 class="foot__tit">Электронный адрес</h3>
+        </div>
+
+        <!-- Списки в одной строке, выравненные по заголовкам -->
+        <div class="wrapper__foot" style="display: flex; gap: 55px; align-items: flex-start;">
+            <!-- Контакты -->
+            <ul class="foot__list">
+            <li class="foot__item">
+                <a href="#!" class="footer__link">Телефон +7(951)753-14-30</a>
+            </li>
+            <li class="foot__item">
+                <a href="#!" class="footer__link">WhatsApp по номеру</a>
+            </li>
+            </ul>
+
+            <!-- Соцсети -->
+            <ul class="foot__list">
+            <li class="foot__item">
+                <a href="#!" class="footer__link">Telegram @po_ev_4</a>
+            </li>
+            <li class="foot__item">
+                <a href="#!" class="footer__link">VK @pevvko_ugh</a>
+            </li>
+            </ul>
+
+            <!-- Электронные адреса -->
+            <ul class="foot__list">
+            <li class="foot__item">
+                <a href="mailto:bogsav10@mail.ru" class="footer__link">Личная: bogsav10@mail.ru</a>
+            </li>
+            <li class="foot__item">
+                <a href="mailto:pevko.ugh@gmail.com" class="footer__link">Рабочая: pevko.ugh@gmail.com</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    </footer>
+</html>

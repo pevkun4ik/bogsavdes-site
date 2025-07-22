@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | BogSavDes</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header class="header" id="myHeader">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                <a href="./index.html" class="header__logo link">
+                    <img src="./img/svg/logo.svg" alt="44PEV" class="header__logo-pic">
+                </a>
+            </div>
+            <div class="header__nav">
+                <ul class="header_list">
+                    <li class="header__item">
+                        <a href="./index.html" class="header__link__active">Главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./window-portf.html" class="header__link">Портфолио</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./window-contacts.html" class="header__link">Галерея</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./window-entry.php" class="header__link">Сделать заказ</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="myMain">
+        <section class="intro">
+            <div class="wrapper">
+                <h1 class="intro__title1">
+                    ПОРТФОЛИО
+                </h1>
+                <h1 class="intro__title2">
+                    ДИЗАЙНЕРА
+                </h1>
+                <h1 class="intro__title3">
+                    2021-2024
+                </h1>
+                <div class="main__wrapper">
+                    <p class="intro__subtitle">
+                        Я - графический и веб дизайнер, иллюстратор, с опытом работы около четырех лет, участник и победитель всеразличных конкурсов в сфере дизайна и иллюстрации. Имею опыт работы с настоящими заказчиками, также отличные навыки коммуникации.
+                    </p>
+                    <p class="intro__cont">
+                        @po_ev_4
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <footer class="footer">
+    <section class="foot__int">
+        <div class="wrapper">
+            <div class="wrapper__foot">
+                <h3 class="foot__tit">Контакты</h3>
+                <h3 class="foot__tit" style="padding-right: 112px;">Электронный адрес</h3>
+            </div>
+            <div class="" style="display: flex; gap: 55px;">
+                <ul class="foot__list">
+                    <li class="foot__item">
+                        <a href="#!" class="footer__link">Телефон +7(951)753-14-30</a>
+                    </li>
+                    <li class="foot__item">
+                        <a href="#!" class="footer__link">WhatsApp по номеру</a>
+                    </li>
+                </ul>
+
+                <ul class="foot__list">
+                    <li class="foot__item">
+                        <a href="#!" class="footer__link">Telegram @po_ev_4</a>
+                    </li>
+                    <li class="foot__item">
+                        <a href="#!" class="footer__link" style="padding-top: 2px">VK @pevvko_ugh</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    </footer> -->
+
+    <footer class="footer">
+    <section class="foot__int">
+        <div class="wrapper">
+        <!-- Заголовки в одной строке -->
+        <div class="wrapper__foot" style="display: flex; gap: 55px;">
+            <h3 class="foot__tit">Контакты</h3>
+            <h3 class="foot__tit">Соцсети</h3>
+            <h3 class="foot__tit">Электронный адрес</h3>
+        </div>
+
+        <!-- Списки в одной строке, выравненные по заголовкам -->
+        <div class="wrapper__foot" style="display: flex; gap: 55px; align-items: flex-start;">
+            <!-- Контакты -->
+            <ul class="foot__list">
+            <li class="foot__item">
+                <a href="#!" class="footer__link">Телефон +7(951)753-14-30</a>
+            </li>
+            <li class="foot__item">
+                <a href="#!" class="footer__link">WhatsApp по номеру</a>
+            </li>
+            </ul>
+
+            <!-- Соцсети -->
+            <ul class="foot__list">
+            <li class="foot__item">
+                <a href="#!" class="footer__link">Telegram @po_ev_4</a>
+            </li>
+            <li class="foot__item">
+                <a href="#!" class="footer__link">VK @pevvko_ugh</a>
+            </li>
+            </ul>
+
+            <!-- Электронные адреса -->
+            <ul class="foot__list">
+            <li class="foot__item">
+                <a href="mailto:bogsav10@mail.ru" class="footer__link">Личная: bogsav10@mail.ru</a>
+            </li>
+            <li class="foot__item">
+                <a href="mailto:pevko.ugh@gmail.com" class="footer__link">Рабочая: pevko.ugh@gmail.com</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    </footer>
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./service-worker.js').then(
+            function (registration) {
+            console.log('ServiceWorker зарегистрирован:', registration.scope);
+            },
+            function (err) {
+            console.log('Ошибка при регистрации ServiceWorker:', err);
+                }
+            );
+        });
+    }
+    </script>
+</body>
+</html>
